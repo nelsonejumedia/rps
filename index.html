@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="nameOverlay" class="overlay">
+        <form id="nameForm" class="name-form">
+            <h2>Enter your name:</h2>
+            <input type="text" id="playerNameInput" required>
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
+    <div id="gameContainer" class="game-container hidden">
+        <h1>Rock, Paper, Scissors</h1>
+        <p id="playerName"></p>
+        <div class="scores">
+            <div>
+                <p id="playerScore">You: 0</p>
+                <div class="choices">
+                    <button class="choice" data-choice="R">R</button>
+                    <button class="choice" data-choice="P">P</button>
+                    <button class="choice" data-choice="S">S</button>
+                </div>
+            </div>
+        </div>
+        <div class="scores">
+            <div>
+                <p id="computerScore">Computer: 0</p>
+                <div class="choices">
+                    <div class="computer-choice" data-choice="R">R</div>
+                    <div class="computer-choice" data-choice="P">P</div>
+                    <div class="computer-choice" data-choice="S">S</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="resultOverlay" class="overlay hidden">
+        <div class="result-container">
+            <h2 id="resultMessage"></h2>
+            <button id="nextRoundButton">Next Round</button>
+        </div>
+    </div>
+    <script src="try.js"></script>
+</body>
+</html>
